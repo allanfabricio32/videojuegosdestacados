@@ -854,11 +854,43 @@
         JUEGOS GRATIS
     </button>
 </div>
-<!-- Nota de suscripción -->
-<div class="subscribe-note">
+<!-- boton de suscribirse -->
+
+<div class="subscribe-note" id="subscribe-note">
     <p>¡No olvides suscribirte a mi canal para más contenido sobre videojuegos! 🎮</p>
-    <a href="https://www.youtube.com/@ByteCraze763" class="subscribe-btn" target="_blank">¡Suscríbete ahora!</a>
+    <a href="https://www.youtube.com/@ByteCraze763" class="subscribe-btn" target="_blank" onclick="ocultarNota()">¡Suscríbete ahora!</a>
 </div>
+
+<style>
+    .subscribe-note {
+        text-align: center;
+        margin: 20px;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+    }
+
+    .subscribe-btn {
+        background-color: #FF0000;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .subscribe-btn:hover {
+        background-color: #cc0000;
+    }
+</style>
+
+<script>
+    function ocultarNota() {
+        // Ocultar la nota de suscripción cuando el usuario haga clic en el botón
+        document.getElementById("subscribe-note").style.display = "none";
+    }
+</script>
+
+
 
 
 
@@ -1077,7 +1109,16 @@
         }
     </style>
 </head>
+
 <body>
+   
+
+
+
+
+
+
+
 
     <section class="news-section">
         <h2>Últimas Noticias y Actualizaciones de Juegos</h2>
@@ -1167,4 +1208,10 @@
     </section>
 
 </body>
+
+
+
 </html>
+
+
+
