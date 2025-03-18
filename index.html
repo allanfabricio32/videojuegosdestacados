@@ -485,6 +485,12 @@
                     Los entornos son bellísimos, desde los campos de arroz y los bosques de bambú hasta las montañas nevadas. La iluminación dinámica, el clima cambiante y los efectos visuales como la niebla o la lluvia realmente mejoran la atmósfera..</p>
             </div>
 
+
+
+
+
+
+
             <!-- Juegos para Xbox -->
             <div class="game-card xbox">
                 <img src="imagenes/img (2).jpg" alt="Xbox Juego 1">
@@ -542,6 +548,7 @@
                     
                     El modo Ultimate Team sigue siendo el principal atractivo del juego, donde los jugadores pueden construir su equipo de fútbol soñado, utilizando cartas de jugadores y objetos especiales. En EA Sports FC 24, se ha refinado la jugabilidad de FUT, introduciendo nuevas dinámicas y una mayor personalización para los jugadores..</p>
             </div>
+
             <div class="game-card xbox">
                 <img src="imagenes/cod6.webp" alt="Xbox Juego 5">
                 <h2>Xbox CALL OF DUTY BLACK OPS 6</h2>
@@ -558,6 +565,51 @@
                     2. Jugabilidad
                     Clásico estilo Gears of War: La jugabilidad de Gears 5 sigue el estilo táctico de disparos en tercera persona que hizo famosa la serie. Los jugadores deben utilizar coberturas, tácticas de equipo, y disparos precisos para enfrentarse a hordas de enemigos...</p>
             </div>
+
+
+
+
+
+                           <!-- TARJETA GTA 6 -->
+                           <div class="game-card xbox">
+                            <img src="img/gta 6.webp" alt="Xbox Juego 5">
+                            <h2>PS5 Próximamente: GTA 6</h2>
+                            <p>Un nuevo título que llegará muy pronto a XBOX/PS5.</p>
+                            <span class="not-available">No Disponible</span>
+                        
+                            <!-- Botón para ver el tráiler -->
+                            <button class="trailer-btn" onclick="playTrailer()">Ver Tráiler</button>
+                        
+                            <!-- Contenedor del tráiler (oculto por defecto) -->
+                            <div class="trailer-container" id="trailer" style="display: none;">
+                                <iframe id="trailer-video" width="100%" height="200" src="https://www.youtube.com/embed/QdBZY2fkU-0?enablejsapi=1" 
+                                        title="GTA 6 Tráiler Oficial" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        
+                        <script>
+                            function playTrailer() {
+                                let trailerDiv = document.getElementById("trailer");
+                                let iframe = document.getElementById("trailer-video");
+                        
+                                // Mostrar el tráiler
+                                trailerDiv.style.display = "block";
+                        
+                                // Reproducir el video automáticamente
+                                iframe.src += "&autoplay=1";
+                            }
+                        </script>
+
+
+
+
+
+
+
+
+
+            </div>
+            
         </section>
     </main>
 
@@ -793,6 +845,8 @@
             </div>
 
             <!-- Juegos para Xbox -->
+       \
+            
             <div class="game-card xbox">
                 <img src="imagenes/img (2).jpg" alt="Xbox Juego 1">
                 <h2>Xbox HALO INFINITE</h2>
@@ -829,6 +883,10 @@
                 <p>Descripción de gears of war .</p>
                 <a href="https://store.steampowered.com/agecheck/app/1097840/" class="download-btn" target="_blank">Descargar gears of war 5</a>
             </div>
+
+
+            
+            
         </section>
     </main>
 
@@ -1212,10 +1270,16 @@
      <!-- soporte tecnico -->
     <a href="mailto:af6131287@gmail.com?subject=Soporte%20técnico&body=Escribe%20tu%20mensaje%20aquí">Contáctanos por correo</a>
 
+
+
+
+
+
+
+
+
+
 </body>
-
-
-
 
 
 
