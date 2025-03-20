@@ -879,6 +879,77 @@ body {
 
 
 
+/* Estilo básico para pantallas grandes (como en desktop) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Media query para pantallas pequeñas (como en dispositivos móviles) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .game-card {
+        width: 100%;  /* Hacer que las tarjetas de juegos ocupen todo el ancho */
+        margin-bottom: 10px;
+    }
+
+    .button-container {
+        text-align: center;
+    }
+
+    .subscribe-note {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TRAILER GTA 6 */
+.trailer-container {
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* responsiva para movile*/
+
+@media (max-width: 768px) {
+    .game-card {
+        width: 100%;
+    }
+}
+
+
+
+
 
 
 
