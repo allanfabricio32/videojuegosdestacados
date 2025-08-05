@@ -34,27 +34,53 @@
 
     <main>
         <section class="games" id="games-section">
-            <!-- Juegos para PC -->
-            <div class="game-card pc">
-                <img src="imagenes/pc games.webp" alt="PC Juego 1">
-                <h2>PC FORTNITE</h2>
-                <p>Pase de Batalla: Sistema de recompensas que permite a los jugadores desbloquear contenido exclusivo mientras avanzan en el juego.
-                    Requisitos de Fortnite:
-                    Requisitos Mínimos (para jugar en calidad baja):
-                    Sistema Operativo: Windows 7/8/10 de 64 bits o macOS Mojave 10.14.6
-                    Procesador: Intel Core i3 a 3.0 GHz o equivalente
-                    Memoria: 4 GB de RAM
-                    Tarjeta gráfica: Intel HD 4000 (Ivy Bridge) o superior
-                    DirectX: Versión 11
-                    Espacio en disco: 15 GB de espacio disponible
-                    Requisitos Recomendados (para jugar en calidad media o alta):
-                    Sistema Operativo: Windows 10 de 64 bits o macOS Catalina 10.15.7
-                    Procesador: Intel Core i5 a 2.8 GHz o equivalente
-                    Memoria: 8 GB de RAM
-                    Tarjeta gráfica: Nvidia GTX 660 o AMD Radeon HD 7870 o superior
-                    DirectX: Versión 11
-                    Espacio en disco: 15 GB de espacio disponible.</p>
-            </div>
+ <!-- Juegos para PC -->
+<div class="game-card pc" style="max-width: 600px; border: 1px solid #ccc; padding: 15px; border-radius: 8px; font-family: Arial, sans-serif;">
+    <img src="imagenes/pc games.webp" alt="PC Juego 1" style="width: 100%; border-radius: 8px;">
+    <h2>PC FORTNITE</h2>
+    <p>
+        Pase de Batalla: Sistema de recompensas que permite a los jugadores desbloquear contenido exclusivo mientras avanzan en el juego.<br>
+        <strong>Requisitos de Fortnite:</strong><br>
+        <em>Requisitos Mínimos (para jugar en calidad baja):</em><br>
+        Sistema Operativo: Windows 7/8/10 de 64 bits o macOS Mojave 10.14.6<br>
+        Procesador: Intel Core i3 a 3.0 GHz o equivalente<br>
+        Memoria: 4 GB de RAM<br>
+        Tarjeta gráfica: Intel HD 4000 (Ivy Bridge) o superior<br>
+        DirectX: Versión 11<br>
+        Espacio en disco: 15 GB de espacio disponible<br>
+        <em>Requisitos Recomendados (para jugar en calidad media o alta):</em><br>
+        Sistema Operativo: Windows 10 de 64 bits o macOS Catalina 10.15.7<br>
+        Procesador: Intel Core i5 a 2.8 GHz o equivalente<br>
+        Memoria: 8 GB de RAM<br>
+        Tarjeta gráfica: Nvidia GTX 660 o AMD Radeon HD 7870 o superior<br>
+        DirectX: Versión 11<br>
+        Espacio en disco: 15 GB de espacio disponible.
+    </p>
+
+    <button id="showVideoBtn" style="background-color:#357ABD; color:white; border:none; padding:10px 20px; border-radius: 25px; cursor:pointer; font-weight: bold; font-size: 16px;">
+        Ver guía de instalación
+    </button>
+
+    <div id="videoContainer" style="margin-top: 20px; display: none;">
+        <iframe width="100%" height="315" src="imagenes,/a huevo ‐ Hecho con Clipchamp.mp4" title="Guía para descargar Fortnite en PC" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    const btn = document.getElementById('showVideoBtn');
+    const videoDiv = document.getElementById('videoContainer');
+
+    btn.addEventListener('click', () => {
+        if (videoDiv.style.display === 'none') {
+            videoDiv.style.display = 'block';
+            btn.textContent = 'Ocultar guía de instalación';
+        } else {
+            videoDiv.style.display = 'none';
+            btn.textContent = 'Ver guía de instalación';
+        }
+    });
+</script>
+
             <div class="game-card pc">
                 <img src="imagenes/pc.jpg" alt="PC Juego 2">
                 <h2>PC PUBG</h2>
@@ -332,7 +358,7 @@
 
 
             <div class="game-card pc">
-                <img src="imagenes/poppy-playtime.jpg" alt="PC PlayTime">
+                <img src="imagenes,/poppy-playtime.jpg"PC PlayTime">
                 <h2>PC Poppy Playtime </h2>
                 <p>Requisitos Mínimos:
                     Sistema operativo: Windows 7 (64-bit) o superior
@@ -910,37 +936,39 @@
             <div class="game-card ps5">
                 <img src="imagenes/img..jpg" alt="PS5 Juego 1">
                 <h2>PS5 SPIDERMAN</h2>
-                <p>..</p>
+                <p>.Marvel's Spider-Man: Miles Morales es una aventura de acción en mundo abierto desarrollada por Insomniac Games y publicada por Sony Interactive Entertainment para la consola PlayStation 5. En esta entrega, los jugadores toman el control de Miles Morales, un joven que hereda el manto de Spider-Man mientras Peter Parker se encuentra ausente.
+
+.</p>
                 <a href="https://www.playstation.com/en-us/games/spider-man/" class="download-btn" target="_blank">Descargar Spiderman</a>
             </div>
             <div class="game-card ps5">
                 <img src="imagenes/ASTROBOT.png" alt="PS5 Juego 2">
                 <h2>PS5 ASTROBOT</h2>
-                <p>.</p>
+                <p>Astro’s Playroom es un juego de plataformas en 3D desarrollado por Japan Studio / Team Asobi y viene preinstalado en todas las consolas PlayStation 5. Diseñado principalmente para mostrar las capacidades únicas del control DualSense, este juego es una carta de amor a la historia de PlayStation y una experiencia divertida y nostálgica tanto para jugadores nuevos como veteranos..</p>
                 <a href="https://www.playstation.com/en-us/games/astro-bot-rescue-mission/" class="download-btn" target="_blank">Descargar ASTROBOT</a>
             </div>
             <div class="game-card ps5">
                 <img src="imagenes/1655484530-god-of-war-ragnarok-ps5-pre-orden-0.jpg" alt="PS5 Juego 3">
                 <h2>PS5 GOD OF WAR</h2>
-                <p>Descripció.</p>
+                <p>God of War: Ragnarök es un juego de acción y aventura desarrollado por Santa Monica Studio y publicado por Sony Interactive Entertainment. Es la esperada secuela de God of War (2018) y continúa la historia de Kratos y su hijo Atreus mientras enfrentan el apocalíptico evento del Ragnarök en la mitología nórdica..</p>
                 <a href="https://www.playstation.com/en-us/games/god-of-war-ragnarok/" class="download-btn" target="_blank">Descargar God of War</a>
             </div>
             <div class="game-card ps5">
                 <img src="imagenes/711719548133_PS5_Standard_HZFW_Pshot_A.webp" alt="PS5 Juego 4">
                 <h2>PS5 HORIZON</h2>
-                <p>Descripción del PS5 Juego 4.</p>
+                <p>Horizon Forbidden West es un juego de acción y aventura en mundo abierto desarrollado por Guerrilla Games y publicado por Sony Interactive Entertainment. Es la secuela directa de Horizon Zero Dawn y sigue la historia de Aloy, una valiente cazadora que se aventura hacia el oeste prohibido para enfrentar una nueva amenaza que pone en peligro el planeta..</p>
                 <a href="https://www.playstation.com/en-us/games/horizon-forbidden-west/" class="download-btn" target="_blank">Descargar Horizon</a>
             </div>
             <div class="game-card ps5">
                 <img src="imagenes/818m9WGY0lL._SL1500_.jpg" alt="PS5 Juego 5">
                 <h2>PS5 THE LAST OF US</h2>
-                <p>Descripción del PS5 Juego 5.</p>
+                <p>Horizon Forbidden West es un juego de acción y aventura en mundo abierto desarrollado por Guerrilla Games y publicado por Sony Interactive Entertainment. Es la secuela directa de Horizon Zero Dawn y sigue la historia de Aloy, una valiente cazadora que se aventura hacia el oeste prohibido para enfrentar una nueva amenaza que pone en peligro el planeta..</p>
                 <a href="https://www.playstation.com/en-us/games/the-last-of-us-part-ii/" class="download-btn" target="_blank">Descargar The Last of Us</a>
             </div>
             <div class="game-card ps5">
                 <img src="imagenes/ps5 ghost.jpg" alt="PS5 Juego 5">
                 <h2>PS5 GHOST</h2>
-                <p>Descripción del PS5 Juego 5.</p>
+                <p>Ghost of Tsushima: Director’s Cut es una edición mejorada del exitoso juego de acción y mundo abierto desarrollado por Sucker Punch Productions. Esta versión para PS5 incluye la historia principal, todo el contenido adicional, y la expansión La Isla Iki, ofreciendo una experiencia aún más completa y profunda..</p>
                 <a href="https://www.playstation.com/es-hn/games/ghost-of-tsushima/" class="download-btn" target="_blank">Descargar ghost of tsushima</a>
             </div>
 
@@ -950,37 +978,37 @@
             <div class="game-card xbox">
                 <img src="imagenes/img (2).jpg" alt="Xbox Juego 1">
                 <h2>Xbox HALO INFINITE</h2>
-                <p>Descripción del Xbox Juego 1.</p>
+                <p>Halo Infinite es un juego de disparos en primera persona (FPS) desarrollado por 343 Industries y publicado por Xbox Game Studios. Es la sexta entrega principal de la saga y marca el regreso del icónico Jefe Maestro (Master Chief) en una nueva aventura ambientada en el anillo Zeta Halo..</p>
                 <a href="https://www.xbox.com/en-us/games/halo-infinite" class="download-btn" target="_blank">Descargar Halo Infinite</a>
             </div>
             <div class="game-card xbox">
                 <img src="imagenes/img (4).jpg" alt="Xbox Juego 2">
                 <h2>Xbox RED DEAD REDEMPTION 2</h2>
-                <p>Descripción del Xbox Juego 2.</p>
+                <p>Red Dead Redemption 2 es un juego de acción, aventura y mundo abierto desarrollado por Rockstar Games. Ambientado en el año 1899, al final de la era del salvaje oeste, el jugador asume el papel de Arthur Morgan, miembro de la banda Van der Linde, en una historia profunda de lealtad, moralidad y supervivencia..</p>
                 <a href="https://www.xbox.com/en-us/games/red-dead-redemption-2" class="download-btn" target="_blank">Descargar Red Dead Redemption 2</a>
             </div>
             <div class="game-card xbox">
                 <img src="imagenes/img.jpg" alt="Xbox Juego 3">
                 <h2>Xbox FORZA HORIZON 5</h2>
-                <p>Descripción del Xbox Juego 3.</p>
+                <p>Forza Horizon 5 es un juego de carreras de mundo abierto desarrollado por Playground Games y publicado por Xbox Game Studios. Ambientado en un extenso y vibrante México, el juego ofrece una experiencia de conducción diversa y accesible tanto para jugadores casuales como para expertos..</p>
                 <a href="https://www.xbox.com/en-us/games/forza-horizon-5" class="download-btn" target="_blank">Descargar Forza Horizon 5</a>
             </div>
             <div class="game-card xbox">
                 <img src="imagenes/71hA1wYj2ZL.jpg" alt="Xbox Juego 4">
                 <h2>Xbox EA FC 25</h2>
-                <p>Descripción del Xbox Juego 4.</p>
+                <p>EA FC 24 es la última entrega de la popular serie de videojuegos de fútbol desarrollada por EA Sports. Representa un rebranding importante tras la finalización de la licencia con FIFA. El juego ofrece una experiencia de simulación futbolística realista y pulida, con mejoras en gráficos, animaciones y jugabilidad..</p>
                 <a href="https://www.xbox.com/en-us/games/ea-fc-25" class="download-btn" target="_blank">Descargar EA FC 25</a>
             </div>
             <div class="game-card xbox">
                 <img src="imagenes/cod6.webp" alt="Xbox Juego 5">
                 <h2>Xbox CALL OF DUTY BLACK OPS 6</h2>
-                <p>Descripción del Xbox Juego 5.</p>
+                <p>Call of Duty es una de las franquicias más icónicas y exitosas de juegos de disparos en primera persona (FPS). Desarrollada originalmente por Infinity Ward y publicada por Activision, la saga ha evolucionado a lo largo de los años con múltiples títulos que cubren desde la Segunda Guerra Mundial hasta futuros escenarios de ciencia ficción y guerra moderna..</p>
                 <a href="https://www.xbox.com/en-us/games/call-of-duty-black-ops" class="download-btn" target="_blank">Descargar Call of Duty</a>
             </div>
             <div class="game-card xbox">
                 <img src="imagenes/-gears-of-war-5-xbox-one-0.jpg" alt="Xbox Juego 5">
                 <h2>Xbox GEARS OF WAR 5</h2>
-                <p>Descripción de gears of war .</p>
+                <p>Gears 5 es un videojuego de acción en tercera persona desarrollado por The Coalition y publicado por Xbox Game Studios. Lanzado el 10 de septiembre de 2019, es la secuela directa de Gears of War 4 y la sexta entrega principal de la saga. La historia sigue a Kait Díaz, una forastera con ascendencia Locust, mientras busca respuestas sobre su conexión con el enemigo y descubre quién es el mayor peligro para Sera: ella misma..</p>
                 <a href="https://store.steampowered.com/agecheck/app/1097840/" class="download-btn" target="_blank">Descargar gears of war 5</a>
             </div>
 
@@ -1279,97 +1307,125 @@
 
 
 
+<section class="news-section">
+    <h2>Últimas Noticias y Actualizaciones de Juegos</h2>
+    <div class="news-container">
 
-    <section class="news-section">
-        <h2>Últimas Noticias y Actualizaciones de Juegos</h2>
-        <div class="news-container">
-
-            <!-- Noticia 1 -->
-            <div class="news-item">
-                <h3>Nuevo DLC para God of War Ragnarok</h3>
-                <p><strong>Fecha:</strong> 3 de febrero, 2025</p>
-                <p><strong>Descripción:</strong> El nuevo DLC de God of War Ragnarok añade nuevas misiones, personajes y un área secreta en la mitología nórdica.</p>
-                <a href="https://www.playstation.com/es-es/games/god-of-war-ragnarok" target="_blank">Leer más</a>
-            </div>
-
-            <!-- Noticia 2 -->
-            <div class="news-item">
-                <h3>Actualización de Halo Infinite: Nuevos mapas y modos multijugador</h3>
-                <p><strong>Fecha:</strong> 2 de febrero, 2025</p>
-                <p><strong>Descripción:</strong> La última actualización de Halo Infinite trae nuevos mapas y un modo Battle Royale exclusivo para Xbox Series X|S.</p>
-                <a href="https://www.xbox.com/es-es/games/halo-infinite" target="_blank">Leer más</a>
-            </div>
-
-            <!-- Noticia 3 -->
-            <div class="news-item">
-                <h3>Red Dead Redemption 2 recibe mejoras gráficas</h3>
-                <p><strong>Fecha:</strong> 1 de febrero, 2025</p>
-                <p><strong>Descripción:</strong> Red Dead Redemption 2 recibe una actualización con soporte para 4K y 60 fps en las consolas de nueva generación.</p>
-                <a href="https://www.rockstargames.com/reddeadredemption2" target="_blank">Leer más</a>
-            </div>
-
-            <!-- Noticia 4 -->
-            <div class="news-item">
-                <h3>Nuevo evento en The Last of Us Part II</h3>
-                <p><strong>Fecha:</strong> 30 de enero, 2025</p>
-                <p><strong>Descripción:</strong> Naughty Dog anuncia un evento especial con nuevos desafíos y recompensas por tiempo limitado.</p>
-                <a href="https://www.naughtydog.com/games/the-last-of-us-part-ii" target="_blank">Leer más</a>
-            </div>
-
-            <!-- Noticia 5 -->
-            <div class="news-item">
-                <h3>Nuevo Mapa en Call of Duty: Warzone 2</h3>
-                <p><strong>Fecha:</strong> 4 de febrero, 2025</p>
-                <p><strong>Descripción:</strong> Call of Duty: Warzone 2 presenta un nuevo mapa futurista y nuevas armas y vehículos.</p>
-                <a href="https://www.callofduty.com/warzone" target="_blank">Leer más</a>
-            </div>
-
-            <!-- Noticia 6 -->
-            <div class="news-item">
-                <h3>Final Fantasy XVI: Actualización de personajes y misiones</h3>
-                <p><strong>Fecha:</strong> 3 de febrero, 2025</p>
-                <p><strong>Descripción:</strong> FF XVI introduce nuevos personajes y misiones que expanden la historia.</p>
-                <a href="https://www.ff16.com" target="_blank">Leer más</a>
-            </div>
-
-            <!-- Noticia 7 -->
-            <div class="news-item">
-                <h3>Overwatch 2: Nuevo héroe y mapa</h3>
-                <p><strong>Fecha:</strong> 2 de febrero, 2025</p>
-                <p><strong>Descripción:</strong> Overwatch 2 presenta a "Viper", una francotiradora con habilidades venenosas.</p>
-                <a href="https://www.playoverwatch.com" target="_blank">Leer más</a>
-            </div>
-
-            <!-- Noticia 8 -->
-            <div class="news-item">
-                <h3>Assassin's Creed: Mirage se lanzará este verano</h3>
-                <p><strong>Fecha:</strong> 1 de febrero, 2025</p>
-                <p><strong>Descripción:</strong> Ubisoft anuncia la nueva entrega ambientada en Bagdad.</p>
-                <a href="https://www.ubisoft.com/assassins-creed-mirage" target="_blank">Leer más</a>
-            </div>
-
-            <!-- Noticia 9 -->
-            <div class="news-item">
-                <h3>Resident Evil 4 Remake: Modo VR</h3>
-                <p><strong>Fecha:</strong> 31 de enero, 2025</p>
-                <p><strong>Descripción:</strong> El remake recibirá un modo VR con controles mejorados.</p>
-                <a href="https://www.capcom.com/residentevil4vr" target="_blank">Leer más</a>
-            </div>
-
-            <!-- Noticia 10 -->
-            <div class="news-item">
-                <h3>Starfield: Nuevo trailer y fecha confirmada</h3>
-                <p><strong>Fecha:</strong> 30 de enero, 2025</p>
-                <p><strong>Descripción:</strong> Bethesda confirma el lanzamiento para el 15 de abril de 2025.</p>
-                <a href="https://www.bethesda.net/en/game/starfield" target="_blank">Leer más</a>
-            </div>
-
+        <!-- Noticia 1 -->
+        <div class="news-item">
+            <h3>Lanzamiento oficial de Hogwarts Legacy: Edición Definitiva</h3>
+            <p><strong>Fecha:</strong> 3 de agosto, 2025</p>
+            <p><strong>Descripción:</strong> La Edición Definitiva de Hogwarts Legacy ya está disponible con contenido adicional, mejoras gráficas y compatibilidad completa para PS5 y Xbox Series X|S.</p>
+            <a href="https://www.hogwartslegacy.com" target="_blank">Leer más</a>
         </div>
-    </section>
-    
-     <!-- soporte tecnico -->
-    <a href="mailto:af6131287@gmail.com?subject=Soporte%20técnico&body=Escribe%20tu%20mensaje%20aquí">Contáctanos por correo</a>
 
+        <!-- Noticia 2 -->
+        <div class="news-item">
+            <h3>Cyberpunk 2077: Phantom Liberty recibe su última actualización</h3>
+            <p><strong>Fecha:</strong> 2 de agosto, 2025</p>
+            <p><strong>Descripción:</strong> CD Projekt RED lanza parche con optimizaciones, nuevas misiones y ajustes para la expansión Phantom Liberty.</p>
+            <a href="https://www.cyberpunk.net" target="_blank">Leer más</a>
+        </div>
+
+        <!-- Noticia 3 -->
+        <div class="news-item">
+            <h3>Final Fantasy XVII anunciado oficialmente</h3>
+            <p><strong>Fecha:</strong> 1 de agosto, 2025</p>
+            <p><strong>Descripción:</strong> Square Enix revela Final Fantasy XVII con tráiler cinemático y primer vistazo a su nuevo mundo y personajes.</p>
+            <a href="https://www.square-enix.com" target="_blank">Leer más</a>
+        </div>
+
+        <!-- Noticia 4 -->
+        <div class="news-item">
+            <h3>Call of Duty 2025: Revelan modo Battle Royale renovado</h3>
+            <p><strong>Fecha:</strong> 31 de julio, 2025</p>
+            <p><strong>Descripción:</strong> Activision presenta un modo Battle Royale con mecánicas inéditas y mapa dinámico para su título anual.</p>
+            <a href="https://www.callofduty.com" target="_blank">Leer más</a>
+        </div>
+
+        <!-- Noticia 5 -->
+        <div class="news-item">
+            <h3>Assassin’s Creed: New Dawn retrasa su fecha de lanzamiento</h3>
+            <p><strong>Fecha:</strong> 30 de julio, 2025</p>
+            <p><strong>Descripción:</strong> Ubisoft anuncia un retraso para pulir el juego y garantizar una experiencia óptima, nueva fecha prevista para noviembre 2025.</p>
+            <a href="https://www.ubisoft.com" target="_blank">Leer más</a>
+        </div>
+
+        <!-- Noticia 6 -->
+        <div class="news-item">
+            <h3>Marvel’s Spider-Man 3 confirma fecha de salida</h3>
+            <p><strong>Fecha:</strong> 29 de julio, 2025</p>
+            <p><strong>Descripción:</strong> Insomniac Games confirma el lanzamiento oficial para diciembre de 2025 con nuevas habilidades y villanos.</p>
+            <a href="https://www.playstation.com" target="_blank">Leer más</a>
+        </div>
+
+        <!-- Noticia 7 -->
+        <div class="news-item">
+            <h3>Resident Evil 9: Primer tráiler oficial sorprende a fans</h3>
+            <p><strong>Fecha:</strong> 28 de julio, 2025</p>
+            <p><strong>Descripción:</strong> Capcom presenta el primer tráiler de Resident Evil 9, con nuevas ubicaciones y enemigos terroríficos.</p>
+            <a href="https://www.capcom.com" target="_blank">Leer más</a>
+        </div>
+
+        <!-- Noticia 8 -->
+        <div class="news-item">
+            <h3>Overwatch 3 anunciado con importantes cambios en jugabilidad</h3>
+            <p><strong>Fecha:</strong> 27 de julio, 2025</p>
+            <p><strong>Descripción:</strong> Blizzard anuncia Overwatch 3 con nuevos héroes, mapas y un sistema competitivo renovado.</p>
+            <a href="https://playoverwatch.com" target="_blank">Leer más</a>
+        </div>
+
+        <!-- Noticia 9 -->
+        <div class="news-item">
+            <h3>Xbox presenta nuevo mando Elite Series 3</h3>
+            <p><strong>Fecha:</strong> 26 de julio, 2025</p>
+            <p><strong>Descripción:</strong> Microsoft lanza el mando Elite Series 3 con mejoras en ergonomía, duración y personalización avanzada.</p>
+            <a href="https://www.xbox.com" target="_blank">Leer más</a>
+        </div>
+
+        <!-- Noticia 10 -->
+        <div class="news-item">
+            <h3>Starfield recibe expansión “Horizons” con contenido espacial inédito</h3>
+            <p><strong>Fecha:</strong> 25 de julio, 2025</p>
+            <p><strong>Descripción:</strong> Bethesda lanza la primera expansión de Starfield, con nuevas misiones, planetas y naves.</p>
+            <a href="https://bethesda.net" target="_blank">Leer más</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+    
+  <!-- Botón mejorado para contacto por correo -->
+<a href="mailto:af6131287@gmail.com?subject=Soporte%20técnico&body=Escribe%20tu%20mensaje%20aquí" class="contact-button">
+  📧 Contáctanos por correo
+</a>
+
+<style>
+  .contact-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #4a90e2, #357ABD);
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 10px rgba(53, 122, 189, 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+  }
+  .contact-button:hover {
+    background: linear-gradient(135deg, #357ABD, #4a90e2);
+    box-shadow: 0 6px 14px rgba(53, 122, 189, 0.7);
+  }
+  .contact-button:active {
+    background: linear-gradient(135deg, #2a5f9e, #2561a7);
+    box-shadow: 0 2px 6px rgba(53, 122, 189, 0.9);
+  }
+</style>
 
 
 
