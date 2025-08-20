@@ -8,7 +8,7 @@ nav {
 
 /* Estilo para los botones de plataformas */
 .platform-btn {
-    background-color: #4CAF50; /* Color de fondo verde */
+    background-color: #af544c; /* Color de fondo verde */
     color: white; /* Texto blanco */
     padding: 10px 20px;
     border: none;
@@ -20,7 +20,7 @@ nav {
 
 /* Efecto hover para los botones */
 .platform-btn:hover {
-    background-color: #45a049; /* Color verde más oscuro al pasar el mouse */
+    background-color: #d13e15; /* Color verde más oscuro al pasar el mouse */
 }
 
 /* Estilos para las tarjetas */
@@ -44,7 +44,7 @@ nav {
 .details-btn {
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: #4CAF50;
+    background-color: #ac1a1a;
     color: white;
     border: none;
     border-radius: 5px;
@@ -52,7 +52,7 @@ nav {
 }
 
 .details-btn:hover {
-    background-color: #45a049;
+    background-color: #c12222;
 }
 /* Estilo para el botón de Iniciar Sesión */
 .login-btn {
@@ -85,7 +85,7 @@ nav {
 }
 
 .platform-btn {
-    background-color: #28a745;
+    background-color: #a71313;
     color: white;
     padding: 10px 20px;
     margin: 0 10px;
@@ -97,7 +97,7 @@ nav {
 }
 
 .platform-btn:hover {
-    background-color: #218838;
+    background-color: #c01d1d;
 }
 
 /* Estilo para las tarjetas */
@@ -941,9 +941,152 @@ body {
 
 /* responsiva para movile*/
 
+
+
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Tarjetas de juegos */
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.game-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.game-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.game-card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Media Queries para móviles */
 @media (max-width: 768px) {
-    .game-card {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
         width: 100%;
+        text-align: center;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .games {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -961,4 +1104,33 @@ body {
 
 
 
+
+
+
+
+
+
+
+/* Botones de plataforma con nuevo color */
+.platform-btn {
+background: linear-gradient(135deg, #00ff7f, #00cc55);
+
+
+ /* Gradiente naranja a rosa */
+    color: white; /* Texto blanco */
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 30px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.platform-btn:hover {
+    background: linear-gradient(135deg, #dd2476, #ff512f); /* Invierte el gradiente al pasar el mouse */
+    transform: scale(1.1); /* Sube ligeramente el botón */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
 
