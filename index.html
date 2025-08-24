@@ -9,25 +9,86 @@
 </head>
 
 
+
+
+<header>
+     <!-- codigo de genero y plataforma-->
+
+<!-- BOTONES DE GÉNERO -->
+
+<div class="genre-buttons">
+  <button onclick="setGenre('all')">Todos</button>
+  <button onclick="setGenre('deportes')">Deportes</button>
+  <button onclick="setGenre('accion')">Acción</button>
+  <button onclick="setGenre('aventura')">Aventura</button>
+</div>
+<!--codigo estilo de btones generos-->
+<style>
+.genre-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.genre-buttons button {
+  background-color: #af544c; /* color base */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.genre-buttons button:hover {
+  background-color: #d46b61; /* color al pasar el mouse */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.genre-buttons button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body>
 
 
+<header>
+    <h1>🎮 Videojuegos Destacados</h1>
+    <nav>
+        <button class="platform-btn" onclick="setPlatform('pc')">
+            <img src="imagenes/windows.svg" alt="Logo Pc" class="platform-logo"> PC
+        </button>
+        <button class="platform-btn" onclick="setPlatform('ps5')">
+            <img src="imagenes/ps4.png" alt="Logo Ps5" class="platform-logo"> PS5
+        </button>
+        <button class="platform-btn" onclick="setPlatform('xbox')">
+            <img src="imagenes/Xbox_one_logo.svg.png" alt="Logo Xbox" class="platform-logo"> Xbox
+        </button>
     
-    <header>
-        <h1>🎮 Videojuegos Destacados</h1>
-     <nav>
-            <button class="platform-btn" onclick="filterGames('pc')">
-                <img src="imagenes/windows.svg" alt="Logo PC" class="platform-logo"> PC
-            </button>
-            <button class="platform-btn" onclick="filterGames('ps5')">
-                <img src="imagenes/ps4.png" alt="Logo PS5" class="platform-logo"> PS5
-            </button>
-            <button class="platform-btn" onclick="filterGames('xbox')">
-                <img src="imagenes/Xbox_one_logo.svg.png" alt="Logo Xbox" class="platform-logo"> Xbox
-            </button>
-        </nav>
-    </header>
-    
+    </nav>
+</header>
+
+
+
 
     <main>
        
@@ -36,6 +97,33 @@
         <section class="games" id="games-section">
 
  <!-- Juegos para PC -->
+
+ <div class="game-card pc" style="max-width: 600px; border: 1px solid #ccc; padding: 15px; border-radius: 8px; font-family: Arial, sans-serif;">
+    <img src="imagenes,/fifa 17.jpg" alt="PC Juego 1" style="width: 100%; border-radius: 8px;">
+    <h2>PC Fifa 17</h2>
+    <p>es un videojuego de fútbol desarrollado por Electronic Arts y publicado por EA Sports. Es el 24.º de la serie y salió a la venta el 28 de septiembre del 2016 en Norteamérica y el 29 de septiembre para el resto del mundo.​ Éste fue el primer juego de la FIFA en la serie en emplear el motor de juego Frostbite.​ </p>
+   </div>
+
+
+
+
+
+ <div class="game-card pc" style="max-width: 600px; border: 1px solid #ccc; padding: 15px; border-radius: 8px; font-family: Arial, sans-serif;">
+    <img src="imagenes,/hellblade.jpg" alt="PC Juego 1" style="width: 100%; border-radius: 8px;">
+    <h2>PC Hellblade: Senua's Sacrifice</h2>
+    <p>es un videojuego de acción-aventura y terror psicológico, desarrollado y publicado en 2017 por Ninja Theory. Descrito por los creadores como un "juego triple A independiente", fue desarrollado por un equipo de aproximadamente veinte personas, con escritos adicionales de la Dra.  </p>
+   </div>
+
+
+
+
+ <div class="game-card pc" style="max-width: 600px; border: 1px solid #ccc; padding: 15px; border-radius: 8px; font-family: Arial, sans-serif;">
+    <img src="imagenes,/deltaforce.jpg" alt="PC Juego 1" style="width: 100%; border-radius: 8px;">
+    <h2>PC Delta Force</h2>
+    <p>trata de shooters tácticos en primera persona basados en operaciones de fuerzas especiales, con un enfoque en la acción militar y el combate estratégico. Las entregas más recientes, como el Delta Force de 2025 desarrollado por TiMi Studio y publicado por Garena, combinan modos de juego JcJ y JcE, se centran en la exfiltración y el combate en equipo, y presentan diferentes operadores con habilidades únicas en escenarios que se actualizan y diversifican. </p>
+   </div>
+
+
 
  <div class="game-card pc" style="max-width: 600px; border: 1px solid #ccc; padding: 15px; border-radius: 8px; font-family: Arial, sans-serif;">
     <img src="imagenes,/nba 2k18.jpg" alt="PC Juego 1" style="width: 100%; border-radius: 8px;">
@@ -130,7 +218,7 @@
 
 
 <div class="game-card pc" style="max-width: 600px; border: 1px solid #ccc; padding: 15px; border-radius: 8px; font-family: Arial, sans-serif;">
-    <img src="imagenes/pc games.webp" alt="PC Juego 1" style="width: 100%; border-radius: 8px;">
+    <img src="imagenes,/firtnite.avif" alt="PC Juego 1" style="width: 100%; border-radius: 8px;">
     <h2>PC FORTNITE</h2>
     <p>
         Pase de Batalla: Sistema de recompensas que permite a los jugadores desbloquear contenido exclusivo mientras avanzan en el juego.<br>
@@ -176,7 +264,7 @@
 </script>
 
             <div class="game-card pc">
-                <img src="imagenes/pc.jpg" alt="PC Juego 2">
+                <img src="imagenes,/pubg.jpg" alt="PC Juego 2">
                 <h2>PC PUBG</h2>
                 <p>Sistema de equipo: PUBG permite jugar de manera individual o en equipos de hasta 4 jugadores, lo que fomenta el trabajo en equipo y la estrategia.
                     Requisitos de PUBG:
@@ -196,7 +284,7 @@
                     Espacio en disco: 30 GB de espacio disponible.</p>
             </div>
             <div class="game-card pc">
-                <img src="imagenes/pc.webp" alt="PC Juego 3">
+                <img src="imagenes,/Far-Cry-6.jpg" alt="PC Juego 3">
                 <h2>PC FAR CRY</h2>
                 <p>Modos cooperativos: Permite jugar en modo cooperativo con amigos para completar misiones o explorar la isla juntos.
                     Requisitos de Far Cry 6:
@@ -216,7 +304,7 @@
                     Espacio en disco: 60 GB de espacio disponible.</p>
             </div>
             <div class="game-card pc">
-                <img src="imagenes/img (3).jpg" alt="PC Juego 4">
+                <img src="imagenes,/gta 5.webp" alt="PC Juego 4">
                 <h2>PC GTA 5</h2>
                 <p>Mecánicas mejoradas: A lo largo de la serie, la jugabilidad de GTA ha mejorado significativamente, con mejores controles de conducción, tiroteos y una mayor variedad de armas y vehículos.
                     Requisitos de GTA V:
@@ -236,7 +324,7 @@
                     Espacio en disco: 72 GB de espacio disponible.</p>
             </div>
             <div class="game-card pc">
-                <img src="imagenes/madison-ps4.jpg" alt="PC Juego 5">
+                <img src="imagenes,/madison.avif" alt="PC Juego 5">
                 <h2>PC MADISON</h2>
                 <p>Requisitos Mínimos:
                     SO: Windows 10 (64-bit)
@@ -254,7 +342,7 @@
                     Almacenamiento: 20 GB de espacio disponible.</p>
             </div>
             <div class="game-card pc">
-                <img src="imagenes/warzone.jpg" alt="PC Juego 5">
+                <img src="imagenes,/warzone.jpg" alt="PC Juego 5">
                 <h2>PC WARZONE</h2>
                 <p>Actualizaciones continuas: Activision proporciona contenido nuevo constantemente, como eventos temporales, nuevos mapas, armas y modos de juego.
                     Requisitos de Call of Duty: Warzone:
@@ -274,7 +362,7 @@
                     Espacio en disco: 175 GB de espacio disponible.</p>
             </div>
             <div class="game-card pc">
-                <img src="imagenes/RED 1.jpg" alt="PC Juego 5">
+                <img src="imagenes,/red dead redemtiont 1.jpg" alt="PC Juego 5">
                 <h2>PC RED DEAD REDEMPTION 1</h2>
                 <p>Requisitos Mínimos:
                     SO: Windows 7 - Service Pack 1 (64 bits)
@@ -301,7 +389,7 @@
                     Tarjeta de sonido: Compatible con DirectX 12.</p>
             </div>
             <div class="game-card pc">
-                <img src="img/call of duty.jpeg" alt="PC Juego 5">
+                <img src="imagenes,/ww2.jpg" alt="PC Juego 5">
                 <h2>PC CALL OF DUTY WW2</h2>
                 <p>Requisitos Mínimos para PC:
                     SO: Windows 7 64-bit (SP1) / Windows 8 64-bit / Windows 10 64-bit
@@ -321,7 +409,7 @@
                     Tarjeta de sonido: Compatible con DirectX 12.</p>
             </div>
             <div class="game-card pc">
-                <img src="imagenes/FIFA 19.jpeg" alt="PC Juego 5">
+                <img src="imagenes,/fifa19.jpg" alt="PC Juego 5">
                 <h2>PC FIFA 19</h2>
                 <p>Requisitos Mínimos para PC:
                     SO: Windows 7/8.1/10 - 64 bits
@@ -341,7 +429,7 @@
                     Tarjeta de sonido: Compatible con DirectX.</p>
             </div>
             <div class="game-card pc">
-                <img src="imagenes//FORZAMOTORPORT.jpg" alt="PC Juego 5">
+                <img src="imagenes,/forza motorports 7.jpg" alt="PC Juego 5">
                 <h2>PC FORZA MOTORSPORT 7</h2>
                 <p>Requisitos Mínimos para PC:
                     SO: Windows 10 - 64 bits
@@ -362,7 +450,7 @@
             </div>
 
             <div class="game-card pc">
-                <img src="imagenes/outlas 2.jpg" alt="PC Outlas 2">
+                <img src="imagenes,/outlas 2.jpg" alt="PC Outlas 2">
                 <h2>PC Outlas 2</h2>
                 <p>Mínimos:
                     ✅ SO: Windows Vista / 7 / 8 / 10 (64-bit)
@@ -383,7 +471,7 @@
             
 
             <div class="game-card pc">
-                <img src="imagenes/resident evil 7.jpeg" alt="PC Resindent Evil 7">
+                <img src="imagenes,/resident evil 7.jpg" alt="PC Resindent Evil 7">
                 <h2>PC Resident Evil 7</h2>
                 <p>🔴 Mínimos:
                     ✅ SO: Windows 7 / 8 / 10 (64-bit)
@@ -402,7 +490,7 @@
                     🚀 Almacenamiento: 24 GB.</p>
             </div>
             <div class="game-card pc">
-                <img src="imagenes/gta san andreas.jpg" alt="PC Gta San Andreas">
+                <img src="imagenes,/gta san andreas.jpg" alt="PC Gta San Andreas">
                 <h2>PC Gta San Andreas </h2>
                 <p>Requisitos Mínimos:
                     Sistema operativo: Windows 2000/XP
@@ -421,7 +509,7 @@
             </div>
             
             <div class="game-card pc">
-                <img src="imagenes/dirt 5.avif" alt="PC Dirt 5">
+                <img src="imagenes,/dirt 5.jpg" alt="PC Dirt 5">
                 <h2>PC Dirt 5 </h2>
                 <p>Requisitos Mínimos:
 
@@ -473,7 +561,7 @@
             
             
             <div class="game-card pc">
-                <img src="imagenes/GOD OF WAR.webp" alt="PC GOD OF WAR">
+                <img src="imagenes,/god of war.webp" alt="PC GOD OF WAR">
                 <h2>PC GOD OF WAR </h2>
                 <p>Requisitos Mínimos:
                     Estos son los requisitos para poder ejecutar el juego en configuraciones bajas:
@@ -498,7 +586,7 @@
             </div>
             
             <div class="game-card pc">
-                <img src="imagenes/Mortal_Kombat_X.webp" alt="PC MORTAL KOMBAT X">
+                <img src="imagenes,/mortal kombat x.png" alt="PC MORTAL KOMBAT X">
                 <h2>PC MORTAL KOMBAT X</h2>
                 <p>Requisitos Mínimos:
                     Estos son los requisitos básicos para que el juego funcione, pero con configuraciones bajas.
@@ -527,7 +615,7 @@
          
         
             <div class="game-card pc">
-                <img src="imagenes/NEED FOR SPEED.webp" alt="PC NEED FOR SPEED PAYBACK">
+                <img src="imagenes,/need for speed payback.jpg" alt="PC NEED FOR SPEED PAYBACK">
                 <h2>PC NEED FOR SPEED PAYBACK</h2>
                 <p>Requisitos Mínimos:
                     Estos son los requisitos para jugar el juego con una calidad de gráficos baja o media.
@@ -551,7 +639,7 @@
                     Tarjeta de sonido: Compatible con DirectX.</p>
             </div>
             <div class="game-card pc">
-                <img src="imagenes/word war z.webp" alt="PC word war z">
+                <img src="imagenes,/world-war zjpg.jpg" alt="PC word war z">
                 <h2>PC word war z</h2>
                 <p> Mínimos:
 
@@ -572,7 +660,7 @@
 
 
             <div class="game-card pc">
-                <img src="imagenes/Call_of_Duty_Black_Ops_II.png" alt="PC Call Of Duty Black Ops 2">
+                <img src="imagenes,/Call_of_Duty_Black_Ops_IIpng.png" alt="PC Call Of Duty Black Ops 2">
                 <h2>PC Call Of Duty Black Ops 2</h2>
                 <p> Requisitos Mínimos
                     Sistema Operativo: Windows Vista SP2 ó Windows 7. Windows XP is not supported
@@ -590,7 +678,7 @@
 
 
             <div class="game-card pc">
-                <img src="imagenes/Cyberpunk_2077.jpg" alt="PC CYBERPUNK 2077">
+                <img src="imagenes,/Cyberpunk_2077.jpg" alt="PC CYBERPUNK 2077">
                 <h2>PC CYBERPUNK 2077</h2>
                 <p>Requisitos mínimos (1080p, baja calidad, 30 FPS):
                     Sistema operativo: Windows 10 (64-bit)
@@ -861,20 +949,7 @@
 </head>
 <body>
 
-    <header>
-        <h1>🎮 Videojuegos Zona de Descarga</h1>
-        <nav>
-            <button class="platform-btn" onclick="filterGames('pc')">
-                <img src="imagenes/windows.svg" alt="Logo PC" class="platform-logo"> PC
-            </button>
-            <button class="platform-btn" onclick="filterGames('ps5')">
-                <img src="imagenes/ps4.png" alt="Logo PS5" class="platform-logo"> PS5
-            </button>
-            <button class="platform-btn" onclick="filterGames('xbox')">
-                <img src="imagenes/Xbox_one_logo.svg.png" alt="Logo Xbox" class="platform-logo"> Xbox
-            </button>
-        </nav>
-    </header>
+
     
 
     <main>
@@ -882,96 +957,122 @@
 
         
         <section class="games" id="games-section">
+
+
             <!-- Juegos para PC -->
 
 
-  <div class="game-card pc">
-                <img src="imagenes,/nba 2k18.jpg" alt="PC Juego 1">
-                <h2>PC Nba 2k18</h2>
-                <p>sistema operativo Windows 7/8.1/10 (64 bits), procesador Intel Core i3-530 o AMD Phenom II X4 805, 4 GB de RAM, tarjeta gráfica NVIDIA GeForce GT 450 o ATI Radeon HD 7770, y 70 GB de espacio de almacenamiento. </p>
-                <a href="zona de descarga/nba 2k18.torrent" class="download-btn" target="_blank">Descargar Nba 2k18</a>
-            </div>
 
-
-
-  <div class="game-card pc">
-                <img src="imagenes,/gta 4.jpg" alt="PC Juego 1">
-                <h2>PC Grand Theft Auto 4</h2>
-                <p>procesador Intel Core 2 Duo a 1.8 GHz o AMD Athlon X2 64 a 2.4 GHz, 1.5 GB de RAM para Windows XP o 1.5 GB para Windows Vista, una tarjeta gráfica NVIDIA 7900 con 256 MB o ATI X1900 con 256 MB, y 16 GB de espacio libre en disco. Además, se necesita Windows XP SP3 o Windows Vista SP1 y DirectX 9.0c. </p>
-                <a href="zona de descarga/gta 4.torrent" class="download-btn" target="_blank">Descargar Grand Theft Auto 4</a>
-            </div>
-
-
-
-
-
-
-
-
-  <div class="game-card pc">
-                <img src="imagenes,/pes13.webp" alt="PC Juego 1">
-                <h2>PC Pro Evolution Soccer 2013</h2>
-                <p>procesador Intel Pentium IV a 2.4 GHz o equivalente, 1 GB de RAM, una tarjeta gráfica compatible con DirectX 9.0c con 128MB de VRAM (como NVIDIA GeForce 6600 o ATI Radeon X1300), DirectX 9.0c, Windows XP SP3, Vista SP2 o 7, 8 GB de espacio libre en disco duro y una resolución de pantalla de 800x600.</p>
-                <a href="zona de descarga/pes13.torrent" class="download-btn" target="_blank">Descargar Pro Evolution Soccer 2013</a>
-            </div>
+<div class="game-card pc deportes">
+    <img src="imagenes,/fifa 17.jpg" alt="PC Fifa 17">
+    <h2>PC Fifa 17</h2>
+    <p>
+        Sistema operativo: Windows 7/8.1/10 de 64 bits<br>
+        CPU: Intel i5-3550K a 3.40GHz o AMD FX 8150 a 3.6GHz<br>
+        Memoria RAM: 8 GB<br>
+        Espacio disponible en el disco duro: 50 GB<br>
+        Tarjeta gráfica mínima necesaria: NVIDIA GTX 660 o AMD Radeon R9 270<br>
+        DirectX: 11.0
+    </p>
+    <a href="zona de descarga/fifa17.torrent" class="download-btn" target="_blank">
+        Descargar Fifa 17
+    </a>
+</div>
 
 
 
 
 
-  <div class="game-card pc">
-                <img src="imagenes,/cupheadjpg.jpg" alt="PC Juego 1">
-                <h2>PC Cuphead</h2>
-                <p>SO: 7, 8, 8.1, ó 10
+
+<div class="game-card pc terror">
+    <img src="imagenes,/hellblade.jpg" alt="PC Juego 1">
+    <h2>PC Hellblade: Senua's Sacrifice</h2>
+    <p>Objetivo: Alto @1440p
+Procesador: Intel Core i7-10700K / AMD Ryzen 5 5600X
+Tarjeta gráfica: NVIDIA GeForce RTX 3080 / AMD Radeon RX 6800 XT / Intel Arc A770
+Memoria RAM: 16 GB
+Almacenamiento: 70 GB SSD
+SO: Windows 10/11 64 bit</p>
+    <a href="zona de descarga/hellblade.torrent" class="download-btn" target="_blank">Descargar Hellblade: Senua's Sacrifice</a>
+</div>
+
+<div class="game-card pc accion">
+    <img src="imagenes,/deltaforce.jpg" alt="PC Juego 1">
+    <h2>PC Delta Force</h2>
+    <p>Requiere un procesador y un sistema operativo de 64 bits
+SO: Windows 10 64 bit
+Procesador: Intel Core i5-6500 / AMD Ryzen 5 1500x
+Memoria: 16 GB de RAM
+Gráficos: Nvidia Geforce GTX 1060 5G / AMD RX5500 XT / Intel Arc A580
+VRAM: 5 GB
+DirectX: Versión 12
+Almacenamiento: 60 GB de espacio disponible (muy recomendable utilizar SSD)</p>
+    <a href="https://deltaforce.garena.com/es/?redirect=0" class="download-btn" target="_blank">Descargar Delta Force</a>
+</div>
+
+<div class="game-card pc deportes">
+    <img src="imagenes,/nba 2k18.jpg" alt="PC Juego 1">
+    <h2>PC Nba 2k18</h2>
+    <p>sistema operativo Windows 7/8.1/10 (64 bits), procesador Intel Core i3-530 o AMD Phenom II X4 805, 4 GB de RAM, tarjeta gráfica NVIDIA GeForce GT 450 o ATI Radeon HD 7770, y 70 GB de espacio de almacenamiento. </p>
+    <a href="zona de descarga/nba 2k18.torrent" class="download-btn" target="_blank">Descargar Nba 2k18</a>
+</div>
+
+<div class="game-card pc accion">
+    <img src="imagenes,/gta 4.jpg" alt="PC Juego 1">
+    <h2>PC Grand Theft Auto 4</h2>
+    <p>procesador Intel Core 2 Duo a 1.8 GHz o AMD Athlon X2 64 a 2.4 GHz, 1.5 GB de RAM para Windows XP o 1.5 GB para Windows Vista, una tarjeta gráfica NVIDIA 7900 con 256 MB o ATI X1900 con 256 MB, y 16 GB de espacio libre en disco. Además, se necesita Windows XP SP3 o Windows Vista SP1 y DirectX 9.0c. </p>
+    <a href="zona de descarga/gta 4.torrent" class="download-btn" target="_blank">Descargar Grand Theft Auto 4</a>
+</div>
+
+<div class="game-card pc deportes">
+    <img src="imagenes,/pes13.webp" alt="PC Juego 1">
+    <h2>PC Pro Evolution Soccer 2013</h2>
+    <p>procesador Intel Pentium IV a 2.4 GHz o equivalente, 1 GB de RAM, una tarjeta gráfica compatible con DirectX 9.0c con 128MB de VRAM (como NVIDIA GeForce 6600 o ATI Radeon X1300), DirectX 9.0c, Windows XP SP3, Vista SP2 o 7, 8 GB de espacio libre en disco duro y una resolución de pantalla de 800x600.</p>
+    <a href="zona de descarga/pes13.torrent" class="download-btn" target="_blank">Descargar Pro Evolution Soccer 2013</a>
+</div>
+
+<div class="game-card pc accion">
+    <img src="imagenes,/cupheadjpg.jpg" alt="PC Juego 1">
+    <h2>PC Cuphead</h2>
+    <p>SO: 7, 8, 8.1, ó 10
 Procesador: Intel i3 2100 ó AMD Athlon II X4 640 ó superior
 Memoria: 4 GB de RAM
 Gráficos: nVidia GT240 1GB ó AMD 5570 1GB ó superior
 DirectX: Versión 9.0
 Almacenamiento: 15 GB de espacio disponible.</p>
-                <a href="zona de descarga/Cuphead..torrent" class="download-btn" target="_blank">Descargar Cuphead</a>
-            </div>
+    <a href="zona de descarga/Cuphead..torrent" class="download-btn" target="_blank">Descargar Cuphead</a>
+</div>
 
-
-
-
-            <div class="game-card pc">
-                <img src="imagenes,/Far_Cry_4_.jpg" alt="PC Juego 1">
-                <h2>PC far cry 4</h2>
-                <p>Sistema Operativo: Windows 7 (SP1) / Windows 8 / Windows 8.1 / (64-bit only)
+<div class="game-card pc accion">
+    <img src="imagenes,/Far_Cry_4_.jpg" alt="PC Juego 1">
+    <h2>PC far cry 4</h2>
+    <p>Sistema Operativo: Windows 7 (SP1) / Windows 8 / Windows 8.1 / (64-bit only)
 Procesador: 2.5 GHz Intel Core i5-2400S ó 4.0 GHz AMD FX-8350 ó superior
 Memoria: 8 GB RAM
 Tarjeta gráfica: NVIDIA GeForce GTX 680 ó AMD Radeon R9 290X ó superior (2 GB VRAM)
 DirectX: Versión 11
 Red: Conexión a Internet de banda ancha
 Disco duro: 30 GB espacio disponible.</p>
-                <a href="zona de descarga/FarCry-4-.torrent" class="download-btn" target="_blank">Descargar far cry 4</a>
-            </div>
+    <a href="zona de descarga/FarCry-4-.torrent" class="download-btn" target="_blank">Descargar far cry 4</a>
+</div>
 
-
-
-
-
-<div class="game-card pc">
-                <img src="imagenes,/resident-evil-2-remakejpg.jpg" alt="PC Juego 1">
-                <h2>PC Resident Evil 2 Remake</h2>
-                <p>Requiere un procesador y un sistema operativo de 64 bits
+<div class="game-card pc terror">
+    <img src="imagenes,/resident-evil-2-remakejpg.jpg" alt="PC Juego 1">
+    <h2>PC Resident Evil 2 Remake</h2>
+    <p>Requiere un procesador y un sistema operativo de 64 bits
 SO: WINDOWS® 7, 8.1, 10 (64-BIT Required)
 Procesador: Intel® Core™ i7-3770 or AMD FX™-9590 or better
 Memoria: 8 GB de RAM
 Gráficos: NVIDIA® GeForce® GTX 1060 or AMD Radeon™ RX 480 with 3GB VRAM
 DirectX: Versión 11
 Almacenamiento: 26 GB de espacio disponible.</p>
-                <a href="zona de descarga/-Resident Evil 2 2019 .torrent" class="download-btn" target="_blank">Descargar Resident Evil 2 Remake</a>
-            </div>
+    <a href="zona de descarga/-Resident Evil 2 2019 .torrent" class="download-btn" target="_blank">Descargar Resident Evil 2 Remake</a>
+</div>
 
-
-
-
-
-<div class="game-card pc">
-                <img src="imagenes,/the-witcher-3.jpg" alt="PC Juego 1">
-                <h2>PC The Witcher 3</h2>
-                <p>Procesador Intel: Intel i7 3770 3,4 GHz
+<div class="game-card pc aventura">
+    <img src="imagenes,/the-witcher-3.jpg" alt="PC Juego 1">
+    <h2>PC The Witcher 3</h2>
+    <p>Procesador Intel: Intel i7 3770 3,4 GHz
 Procesador AMD: AMD FX-8350 4 GHz
 Tarjeta gráfica Nvidia: GeForce GTX 770 ó superior
 Tarjeta gráfica AMD: Radeon R9 290 ó superior
@@ -979,31 +1080,29 @@ Memoria: RAM 8GB
 Sistema operativo: OS 64-bit Win 7/Win 8 (8.1)
 DirectX: DX11
 Disco duro: 40 GB.</p>
-                <a href="zona de descarga/The.Witcher.3.Wild hunt.torrent" class="download-btn" target="_blank">Descargar The Witcher 3</a>
-            </div>
+    <a href="zona de descarga/The.Witcher.3.Wild hunt.torrent" class="download-btn" target="_blank">Descargar The Witcher 3</a>
+</div>
 
-
-<div class="game-card pc">
-                <img src="imagenes,/red dead redemtiont.jpeg" alt="PC Juego 1">
-                <h2>PC Red Dead Redemption 2</h2>
-                <p>Sistema Operativo: Windows 10 (Actualización Abril de 2018)
+<div class="game-card pc aventura">
+    <img src="imagenes,/red dead redemtiont.jpeg" alt="PC Juego 1">
+    <h2>PC Red Dead Redemption 2</h2>
+    <p>Sistema Operativo: Windows 10 (Actualización Abril de 2018)
 MicroProcesador: i7 4770K / AMD Ryzen 5 1500X
 Memoria: 12 GB
 Tarjeta Gráfica: Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB
 Espacio en Disco Duro: 150GB
 Tarjeta de Sonido: Compatible con DirectX.</p>
-            
-                <a href="zona de descarga/RedDR2.torrent" class="download-btn" target="_blank">Descargar  Red Dead Redemption 2</a>
-            </div>
+    
+    <a href="zona de descarga/RedDR2.torrent" class="download-btn" target="_blank">Descargar  Red Dead Redemption 2</a>
+</div>
 
 
 
 
-
-<div class="game-card pc">
-                <img src="imagenes,/battlefield 4.jpg" alt="PC Juego 1">
-                <h2>PC Battlefield 4</h2>
-                <p>Sistema operativo: Windows 8 64-bit
+<div class="game-card pc accion">
+    <img src="imagenes,/battlefield 4.jpg" alt="PC Juego 1">
+    <h2>PC Battlefield 4</h2>
+    <p>Sistema operativo: Windows 8 64-bit
 Procesador (AMD): CPU de seis núcleos
 Procesador (Intel): CPU de cuatro núcleos
 Memoria: 8 GB
@@ -1011,230 +1110,191 @@ Disco duro: 30 GB
 Tarjeta gráfica (AMD): AMD Radeon HD 7870
 Tarjeta gráfica (Nvidia): NVIDIA GeForce GTX 660
 Memoria gráfica: 3 GB.</p>
-                <a href="zona de descarga/Battlefield-4.torrent" class="download-btn" target="_blank">Descargar Battlefield 4</a>
-            </div>
+    <a href="zona de descarga/Battlefield-4.torrent" class="download-btn" target="_blank">Descargar Battlefield 4</a>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-            
-
-<div class="game-card pc">
-                <img src="imagenes,/gear.jpg" alt="PC Juego 1">
-                <h2>PC Gears of War 1</h2>
-                <p>CPU: Intel 2.4 GHz+ / AMD 2.0 GHz+
+<div class="game-card pc accion">
+    <img src="imagenes,/gear.jpg" alt="PC Juego 1">
+    <h2>PC Gears of War 1</h2>
+    <p>CPU: Intel 2.4 GHz+ / AMD 2.0 GHz+
 CPU Reloj: 2.4 GHz
 RAM: 1 GB
 SO: Windows XP or Vista
 Tarjeta de vídeo: NVIDIA Geforce 6600+ / ATI x700+
 DirectX: 9.0c
 Disco Duro: 12 GB.</p>
-                <a href="zona de descarga/-Gears.of.War.torrent" class="download-btn" target="_blank">Descargar Gears of War 1.3 </a>
-            </div>
+    <a href="zona de descarga/-Gears.of.War.torrent" class="download-btn" target="_blank">Descargar Gears of War 1.3 </a>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-<div class="game-card pc">
-                <img src="imagenes,/litlle nighmares.jpg" alt="PC Juego 1">
-                <h2>PC Little Nightmares</h2>
-                <p>Sistema operativo: Windows 10 (64 bits).
+<div class="game-card pc aventura">
+    <img src="imagenes,/litlle nighmares.jpg" alt="PC Juego 1">
+    <h2>PC Little Nightmares</h2>
+    <p>Sistema operativo: Windows 10 (64 bits).
 Procesador: Intel Core i3 o equivalente de AMD.
 Memoria: 8 GB de RAM.
 Gráficos: 2 GB VRAM.
 DirectX: Versión 11.
-Almacenamiento: 4 GB de espacio disponible. ..</p>
-                <a href="zona de descarga/Little.Nightmares.torrent" class="download-btn" target="_blank">Descargar Little Nightmares</a>
-            </div>
+Almacenamiento: 4 GB de espacio disponible.</p>
+    <a href="zona de descarga/Little.Nightmares.torrent" class="download-btn" target="_blank">Descargar Little Nightmares</a>
+</div>
 
-
-
-
-
-  <div class="game-card pc">
-                <img src="imagenes,/Dayz Gone.jpg" alt="PC Juego 1">
-                <h2>PC Dayz Gone</h2>
-                <p>Procesador de 64 bits y sistema operativo Windows 10 o equivalente.
+<div class="game-card pc aventura">
+    <img src="imagenes,/Dayz Gone.jpg" alt="PC Juego 1">
+    <h2>PC Dayz Gone</h2>
+    <p>Procesador de 64 bits y sistema operativo Windows 10 o equivalente.
 CPU Intel Core i5-2500K a 3,3 Ghz, AMD FX-6300 a 3,5 GHz o equivalente.
 8 GB de RAM.
-Tarjeta gráfica Nvidia GeForce GTX 780 (3 GB), AMD Radeon R9 290 (4 GB) o equivalente.
-..</p>
-                <a href="zona de descarga/Days.Gone.torrent" class="download-btn" target="_blank">Descargar Dayz Gone</a>
-            </div>
+Tarjeta gráfica Nvidia GeForce GTX 780 (3 GB), AMD Radeon R9 290 (4 GB) o equivalente.</p>
+    <a href="zona de descarga/Days.Gone.torrent" class="download-btn" target="_blank">Descargar Dayz Gone</a>
+</div>
 
+<div class="game-card pc accion">
+    <img src="imagenes/pc games.webp" alt="PC Juego 1">
+    <h2>PC FORTNITE</h2>
+    <p>Pase de Batalla: Sistema de recompensas que permite a los jugadores desbloquear contenido exclusivo mientras avanzan en el juego. Requisitos para Fortnite: ...</p>
+    <a href="https://store.epicgames.com/es-ES/p/fortnite" class="download-btn" target="_blank">Descargar Fortnite</a>
+</div>
 
+<div class="game-card pc accion">
+    <img src="imagenes/pc.jpg" alt="PC Juego 2">
+    <h2>PC PUBG</h2>
+    <p>Sistema de equipo: PUBG permite jugar de manera individual o en equipos de hasta 4 jugadores. Requisitos para PUBG: ...</p>
+    <a href="https://www.pubg.com/download/" class="download-btn" target="_blank">Descargar PUBG</a>
+</div>
 
+<div class="game-card pc accion">
+    <img src="imagenes/pc.webp" alt="PC Juego 3">
+    <h2>PC FAR CRY</h2>
+    <p>Modos cooperativos: Permite jugar en modo cooperativo con amigos. Requisitos para Far Cry: ...</p>
+    <a href="https://www.ubisoft.com/es-es/game/far-cry" class="download-btn" target="_blank">Descargar Far Cry</a>
+</div>
 
-            <div class="game-card pc">
-                <img src="imagenes/pc games.webp" alt="PC Juego 1">
-                <h2>PC FORTNITE</h2>
-                <p>Pase de Batalla: Sistema de recompensas que permite a los jugadores desbloquear contenido exclusivo mientras avanzan en el juego. Requisitos para Fortnite: ...</p>
-                <a href="https://store.epicgames.com/es-ES/p/fortnite" class="download-btn" target="_blank">Descargar Fortnite</a>
-            </div>
-            <div class="game-card pc">
-                <img src="imagenes/pc.jpg" alt="PC Juego 2">
-                <h2>PC PUBG</h2>
-                <p>Sistema de equipo: PUBG permite jugar de manera individual o en equipos de hasta 4 jugadores. Requisitos para PUBG: ...</p>
-                <a href="https://www.pubg.com/download/" class="download-btn" target="_blank">Descargar PUBG</a>
-            </div>
-            <div class="game-card pc">
-                <img src="imagenes/pc.webp" alt="PC Juego 3">
-                <h2>PC FAR CRY</h2>
-                <p>Modos cooperativos: Permite jugar en modo cooperativo con amigos. Requisitos para Far Cry: ...</p>
-                <a href="https://www.ubisoft.com/es-es/game/far-cry" class="download-btn" target="_blank">Descargar Far Cry</a>
-            </div>
-            <div class="game-card pc">
-                <img src="imagenes/img (3).jpg" alt="PC Juego 4">
-                <h2>PC GTA 5</h2>
-                <p>Mecánicas mejoradas: A lo largo de la serie, la jugabilidad de GTA ha mejorado significativamente. Requisitos para GTA V: ...</p>
-                <a href="https://www.gtaday.com/" class="download-btn" target="_blank">Descargar GTA V</a>
-            </div>
-            <div class="game-card pc">
-                <img src="imagenes/warzone.jpg" alt="PC Juego 5">
-                <h2>PC WARZONE</h2>
-                <p>Actualizaciones continuas: Activision proporciona contenido nuevo constantemente. Requisitos para Warzone: ...</p>
-                <a href="https://www.callofduty.com/warzone" class="download-btn" target="_blank">Descargar Warzone</a>
-            </div>
-            <div class="game-card pc">
-                <img src="imagenes/madison-ps4.jpg" alt="PC Juego 5">
-                <h2>PC MADISON</h2>
-                <p>Actualizaciones continuas: Activision proporciona contenido nuevo constantemente. Requisitos para Warzone: ...</p>
-                <a href="imagenes/1658152569-MADiSON.v1.1.0-P2P (1).torrent" class="download-btn" target="_blank">Descargar madison</a>
-            </div>
-            <div class="game-card pc">
-                <img src="imagenes/RED 1.jpg" alt="PC Juego 5">
-                <h2>PC RED DEAD REDEMTIONT 1</h2>
-                <p>Espacio en disco: El juego requiere un espacio bastante grande (150 GB), por lo que es recomendable tener suficiente espacio libre, preferiblemente en un disco duro de estado sólido (SSD) para obtener tiempos de carga más rápidos.
+<div class="game-card pc accion">
+    <img src="imagenes/img (3).jpg" alt="PC Juego 4">
+    <h2>PC GTA 5</h2>
+    <p>Mecánicas mejoradas: A lo largo de la serie, la jugabilidad de GTA ha mejorado significativamente. Requisitos para GTA V: ...</p>
+    <a href="https://www.gtaday.com/" class="download-btn" target="_blank">Descargar GTA V</a>
+</div>
 
-                    .</p>
-                <a href="zona de descarga/1735393897-Red.Dead.Redemption.v1.0.42.46611-P2P.torrent" class="download-btn" target="_blank">Descargar madison</a>
-            </div>
-            <div class="game-card pc">
-                <img src="imagenes/call of duty cover.jpg" alt="PC Juego 5">
-                <h2>PC CALL OF DUTY WW2</h2>
-                <p>Rendimiento: Si buscas una experiencia fluida con configuraciones de gráficos altas, es recomendable tener una tarjeta gráfica más potente, como una Nvidia GTX 1060 o superior..</p>
-                <a href="zona de descarga/-Call.of.Duty.WWII.MULTI..torrent" class="download-btn" target="_blank">Descargar CALL OF DUTY WW2</a>
-            </div>
-            <div class="game-card pc">
-                <img src="imagenes/FIFA 19.jpeg" alt="PC Juego 5">
-                <h2>PC FIFA 19</h2>
-                <p>Actualización de controladores: Asegúrate de tener los controladores más recientes para tu tarjeta gráfica. Esto puede mejorar el rendimiento y evitar errores..</p>
-                <a href="zona de descarga/1552345876-Fifa 2019 [wWw.GamesTorrents.TV] (1).torrent" class="download-btn" target="_blank">Descargar FIFA 19</a>
-            </div>
-            <div class="game-card pc">
-                <img src="imagenes/FORZAMOTORPORT.jpg" alt="PC Juego 5">
-                <h2>PC FORZA MOTORSPORT 7</h2>
-                <p>Rendimiento: Si deseas jugar con los gráficos en configuraciones más altas, es recomendable que tu PC tenga una tarjeta gráfica potente como la GTX 1070 o superior, junto con un procesador más moderno..</p>
-            
-                <a href="zona de descarga/Forza.Motorsport..torrent" class="download-btn" target="_blank">Descargar Forza Motorsport 7</a>
-            </div>
-            <div class="game-card pc">
-                <img src="imagenes/outlas 2.jpg" alt="PC Juego 5">
-                <h2>PC Outlas 2</h2>
-                <p> Ambientación aterradora: El juego se desarrolla en una zona rural de Arizona, con escenarios oscuros y opresivos.
-                    🔹 Historia psicológica: Sigue a Blake Langermann, un periodista que investiga la misteriosa muerte de una mujer en un pueblo controlado por una secta fanática.
-                    🔹 Sin combate directo: No puedes pelear, solo esconderte, correr o usar el entorno para evitar.</p>
-            
-                <a href="zona de descarga/1522376066-Outlast.2.MULTI-CODEX.WwW.GamesTorrents.CoM.torrent" class="download-btn" target="_blank">Descargar Outlas 2</a>
+<div class="game-card pc accion">
+    <img src="imagenes/warzone.jpg" alt="PC Juego 5">
+    <h2>PC WARZONE</h2>
+    <p>Actualizaciones continuas: Activision proporciona contenido nuevo constantemente. Requisitos para Warzone: ...</p>
+    <a href="https://www.callofduty.com/warzone" class="download-btn" target="_blank">Descargar Warzone</a>
+</div>
 
-            </div>
-            <div class="game-card pc">
-                <img src="imagenes/resident evil 7.jpeg" alt="PC Juego 5">
-                <h2>PC Resident Evil 7 Biohazard</h2>
-                <p> Resident Evil 7 es un videojuego de terror y supervivencia desarrollado y publicado por Capcom en 2017. Es la séptima entrega principal de la saga Resident Evil y marcó un regreso a sus raíces de terror con una nueva perspectiva en primera persona.
+<div class="game-card pc terror">
+    <img src="imagenes/madison-ps4.jpg" alt="PC Juego 5">
+    <h2>PC MADISON</h2>
+    <p>Ambientación aterradora y mecánicas de terror psicológico. Requisitos para MADiSON: ...</p>
+    <a href="imagenes/1658152569-MADiSON.v1.1.0-P2P (1).torrent" class="download-btn" target="_blank">Descargar MADISON</a>
+</div>
 
-                    .</p>
-            
-                <a href="zona de descarga/1665489632-Resident.Evil.7.Biohazard.v20221006-P2P.torrent" class="download-btn" target="_blank">Descargar Resident Evil 7</a>
-            </div>
+<div class="game-card pc aventura">
+    <img src="imagenes/RED 1.jpg" alt="PC Juego 5">
+    <h2>PC RED DEAD REDEMTIONT 1</h2>
+    <p>Espacio en disco: El juego requiere un espacio bastante grande (150 GB), recomendable SSD para tiempos de carga más rápidos.</p>
+    <a href="zona de descarga/1735393897-Red.Dead.Redemption.v1.0.42.46611-P2P.torrent" class="download-btn" target="_blank">Descargar Red Dead Redemption 1</a>
+</div>
 
-            <div class="game-card pc">
-                <img src="imagenes/gta san andreas.jpg" alt="PC Gta San Andreas">
-                <h2>PC Gta San Andreas</h2>
-                <p> GTA: San Andreas es uno de los juegos más emblemáticos de la saga Grand Theft Auto. Lanzado en 2004, presenta una serie de características que lo hicieron destacar en su época. Aquí te dejo algunas de las más notables:.</p>
-            
-                <a href="zona de descarga/-Grand.Theft.Auto.San.Andreas.torrent" class="download-btn" target="_blank">Descargar Gta San Andreas</a>
-            </div>
+<div class="game-card pc accion">
+    <img src="imagenes/call of duty cover.jpg" alt="PC Juego 5">
+    <h2>PC CALL OF DUTY WW2</h2>
+    <p>Rendimiento: Para experiencia fluida con gráficos altos, se recomienda tarjeta gráfica potente como GTX 1060 o superior.</p>
+    <a href="zona de descarga/-Call.of.Duty.WWII.MULTI..torrent" class="download-btn" target="_blank">Descargar CALL OF DUTY WW2</a>
+</div>
 
+<div class="game-card pc deportes">
+    <img src="imagenes/FIFA 19.jpeg" alt="PC Juego 5">
+    <h2>PC FIFA 19</h2>
+    <p>Actualización de controladores: Asegúrate de tener los controladores más recientes para tu tarjeta gráfica para mejorar rendimiento y evitar errores.</p>
+    <a href="zona de descarga/1552345876-Fifa 2019 [wWw.GamesTorrents.TV] (1).torrent" class="download-btn" target="_blank">Descargar FIFA 19</a>
+</div>
 
+<div class="game-card pc deportes">
+    <img src="imagenes/FORZAMOTORPORT.jpg" alt="PC Juego 5">
+    <h2>PC FORZA MOTORSPORT 7</h2>
+    <p>Rendimiento: Para gráficos altos, se recomienda tarjeta gráfica potente (GTX 1070+) y procesador moderno.</p>
+    <a href="zona de descarga/Forza.Motorsport..torrent" class="download-btn" target="_blank">Descargar Forza Motorsport 7</a>
+</div>
 
-            <div class="game-card pc">
-                <img src="imagenes/dirt 5.avif" alt="PC Gta San Andreas">
-                <h2>PC Dirt 5</h2>
-                <p> Dirt 5 es un juego de carreras off-road (todoterreno) desarrollado por Codemasters y lanzado en noviembre de 2020. Forma parte de la serie Dirt, que se especializa en carreras en superficies irregulares y desafiantes, como barro, nieve, arena y rocas. En Dirt 5, los jugadores compiten en una variedad de vehículos todo terreno en diversos entornos, desde desiertos hasta paisajes helados, y atraviesan circuitos complejos y emocionantes.
-                <a href="zona de descarga/DIRT_5-Razor1911.torrent" class="download-btn" target="_blank">Descargar Dirt 5</a>
-            </div>
+<div class="game-card pc terror">
+    <img src="imagenes/outlas 2.jpg" alt="PC Juego 5">
+    <h2>PC Outlas 2</h2>
+    <p>Ambientación aterradora y mecánica de supervivencia sin combate directo.</p>
+    <a href="zona de descarga/1522376066-Outlast.2.MULTI-CODEX.WwW.GamesTorrents.CoM.torrent" class="download-btn" target="_blank">Descargar Outlast 2</a>
+</div>
 
+<div class="game-card pc terror">
+    <img src="imagenes/resident evil 7.jpeg" alt="PC Juego 5">
+    <h2>PC Resident Evil 7 Biohazard</h2>
+    <p>Juego de terror y supervivencia en primera persona, regreso a las raíces de la saga Resident Evil.</p>
+    <a href="zona de descarga/1665489632-Resident.Evil.7.Biohazard.v20221006-P2P.torrent" class="download-btn" target="_blank">Descargar Resident Evil 7</a>
+</div>
 
+<div class="game-card pc accion">
+    <img src="imagenes/gta san andreas.jpg" alt="PC Gta San Andreas">
+    <h2>PC Gta San Andreas</h2>
+    <p>GTA: San Andreas, juego emblemático de la saga Grand Theft Auto.</p>
+    <a href="zona de descarga/-Grand.Theft.Auto.San.Andreas.torrent" class="download-btn" target="_blank">Descargar Gta San Andreas</a>
+</div>
 
-            <div class="game-card pc">
-                <img src="imagenes/poppy-playtime.jpg" alt="PC Gta Poppy Playtime">
-                <h2>PC Poppy Playtime</h2>
-                <p> Poppy Playtime es un videojuego de terror y aventuras desarrollado por MOB Games. Fue lanzado en 2021 y se hizo muy popular rápidamente debido a su atmósfera espeluznante y su mecánica de juego intrigante. El juego está ambientado en una antigua fábrica de juguetes llamada Playtime Co., que ha estado cerrada por años debido a desapariciones misteriosas de los empleados..
-                <a href="zona de descarga/Poppy.Playtime.torrent" class="download-btn" target="_blank">Descargar Poppy Playtime</a>
-            </div>
+<div class="game-card pc deportes">
+    <img src="imagenes/dirt 5.avif" alt="PC Gta San Andreas">
+    <h2>PC Dirt 5</h2>
+    <p>Juego de carreras off-road en múltiples entornos y circuitos complejos.</p>
+    <a href="zona de descarga/DIRT_5-Razor1911.torrent" class="download-btn" target="_blank">Descargar Dirt 5</a>
+</div>
 
-            <div class="game-card pc">
-                <img src="imagenes/GOD OF WAR.webp" alt="PC GOD OF WAR">
-                <h2>PC GOD OF WAR</h2>
-                <p> God of War (2018) es un juego de acción y aventura desarrollado por Santa Monica Studio y lanzado originalmente para PlayStation 4. Es la aclamada nueva entrega de la serie God of War, que sigue la historia de Kratos y su hijo Atreus en un viaje épico a través de un mundo inspirado en la mitología nórdica. En esta entrega, el juego cambia significativamente su estilo de combate y narrativa, enfocándose más en la relación entre padre e hijo, así como en la exploración de un mundo abierto...
-                <a href="zona de descarga/God.of.War.torrent" class="download-btn" target="_blank">Descargar GOD OF WAR</a>
-            </div>
+<div class="game-card pc terror">
+    <img src="imagenes/poppy-playtime.jpg" alt="PC Gta Poppy Playtime">
+    <h2>PC Poppy Playtime</h2>
+    <p>Juego de terror y aventuras ambientado en la antigua fábrica de juguetes Playtime Co.</p>
+    <a href="zona de descarga/Poppy.Playtime.torrent" class="download-btn" target="_blank">Descargar Poppy Playtime</a>
+</div>
 
+<div class="game-card pc accion">
+    <img src="imagenes/GOD OF WAR.webp" alt="PC GOD OF WAR">
+    <h2>PC GOD OF WAR</h2>
+    <p>Juego de acción y aventura basado en la mitología nórdica, con combate y exploración en mundo abierto.</p>
+    <a href="zona de descarga/God.of.War.torrent" class="download-btn" target="_blank">Descargar GOD OF WAR</a>
+</div>
 
-            <div class="game-card pc">
-                <img src="imagenes/Mortal_Kombat_X.webp" alt="PC Gta MORTAL KOMBAT X">
-                <h2>PC MORTAL KOMBAT X</h2>
-                <p> Mortal Kombat X es un juego de lucha desarrollado por NetherRealm Studios y lanzado en 2015. Es la décima entrega de la icónica franquicia de Mortal Kombat. El juego sigue la tradición de la saga con combates sangrientos, brutalidades y fatalities, pero también introduce varias mejoras en jugabilidad, gráficos y personajesBrutalidades y Fatalities: Las fatalities volvieron, pero Mortal Kombat X introdujo también las brutalities, movimientos de remate más específicos y aún más sangrientos...
-                <a href="zona de descarga/Mortal-Kombat-X-Goro-Character-Preorder-Bonus-DLC-[MULTI][BAT]-(Torrent).torrent" class="download-btn" target="_blank">Descargar MORTAL KOMBAT X</a>
-            </div>
+<div class="game-card pc accion">
+    <img src="imagenes/Mortal_Kombat_X.webp" alt="PC Gta MORTAL KOMBAT X">
+    <h2>PC MORTAL KOMBAT X</h2>
+    <p>Juego de lucha con fatalities y brutalities, décima entrega de Mortal Kombat.</p>
+    <a href="zona de descarga/Mortal-Kombat-X-Goro-Character-Preorder-Bonus-DLC-[MULTI][BAT]-(Torrent).torrent" class="download-btn" target="_blank">Descargar MORTAL KOMBAT X</a>
+</div>
 
+<div class="game-card pc accion">
+    <img src="imagenes/NEED FOR SPEED.webp" alt="PC NEED FOR SPEED PAYBACK">
+    <h2>PC NEED FOR SPEED PAYBACK</h2>
+    <p>Carreras de mundo abierto con historia cinematográfica y personalización de coches.</p>
+    <a href="zona de descarga/Need.For.Speed.Payback.MULTI-CPY.WwW.GamesTorrents.CoM.torrent" class="download-btn" target="_blank">Descargar NEED FOR SPEED PAYBACK</a>
+</div>
 
-            <div class="game-card pc">
-                <img src="imagenes/NEED FOR SPEED.webp" alt="PC NEED FOR SPEED PAYBACK">
-                <h2>PC NEED FOR SPEED PAYBACK</h2>
-                <p> Need for Speed: Payback es un juego de carreras de mundo abierto desarrollado por Ghost Games y lanzado en 2017. Forma parte de la famosa franquicia Need for Speed y ofrece una experiencia de carreras con una historia cinematográfica, personalización de coches, y un enfoque en la acción y las persecuciones policiales...
-                <a href="zona de descarga/Need.For.Speed.Payback.MULTI-CPY.WwW.GamesTorrents.CoM.torrent" class="download-btn" target="_blank">Descargar NEED FOR SPEED PAYBACK</a>
-            </div>
-            
-            <div class="game-card pc">
-                <img src="imagenes/word war z.webp" alt="PC WORD WAR Z">
-                <h2>PC WORD WAR Z</h2>
-                <p>El juego World War Z, basado en la película de 2013 y la novela de Max Brooks, se desarrolla en un mundo devastado por una pandemia zombi a nivel global. No sigue una única historia lineal, sino que presenta varias campañas en diferentes ciudades del mundo, mostrando la lucha por la supervivencia de distintos grupos de personajes..
-                <a href="zona de descarga/World.War.Z.Aftermath.v20250127-P2P.torrent" class="download-btn" target="_blank">Descargar WORD WAR Z</a>
-            </div>
+<div class="game-card pc aventura">
+    <img src="imagenes/word war z.webp" alt="PC WORD WAR Z">
+    <h2>PC WORD WAR Z</h2>
+    <p>Juego cooperativo de zombies basado en la película y la novela, campañas en distintas ciudades.</p>
+    <a href="zona de descarga/World.War.Z.Aftermath.v20250127-P2P.torrent" class="download-btn" target="_blank">Descargar WORD WAR Z</a>
+</div>
 
+<div class="game-card pc accion">
+    <img src="imagenes/Call_of_Duty_Black_Ops_II.png" alt="PC call of duty black ops 2">
+    <h2>PC Call Of Duty Black Ops 2</h2>
+    <p>Call of Duty: Black Ops 2, historia de un villano que amenaza EE.UU. con infraestructura militar.</p>
+    <a href="zona de descarga/call of duty black ops 2.torrent" class="download-btn" target="_blank">Descargar CALL OF DUTY BLACK OPS 2</a>
+</div>
 
-            <div class="game-card pc">
-                <img src="imagenes/Call_of_Duty_Black_Ops_II.png" alt="PC call of duty black ops 2">
-                <h2>PC Call Of Duty Black Ops 2</h2>
-                <p>Call of Duty®: Black Ops 2, una narración que abarca todo el tiempo y toda una generación, presenta a los jugadores a un insidioso villano llamado Raúl Menéndez, que secuestra la infraestructura militar de EE. UU. para llevar a cabo sus propios planes..
-                <a href="zona de descarga/call of duty black ops 2.torrent" class="download-btn" target="_blank">Descargar CALL OF DUTY BLACK OPS 2</a>
-            </div>
-            
-   
-            <div class="game-card pc">
-                <img src="imagenes/Cyberpunk_2077.jpg" alt="PC Cyberpunk 2077">
-                <h2>PC Cyberpunk 2077</h2>
-                <p>Cyberpunk 2077 es un juego de rol de acción y aventura de mundo abierto ambientado en Night City, una megalópolis obsesionada con el poder, el glamour y la modificación del cuerpo. Juega como V, un mercenario ciberpunk, y enfréntate a las fuerzas más poderosas de la ciudad en una lucha por la gloria y la supervivencia..
-                <a href="zona de descarga/cyberpunk 2077.torrent" class="download-btn" target="_blank">Descargar Cyberpunk 2077</a>
-            </div>
+<div class="game-card pc accion">
+    <img src="imagenes/Cyberpunk_2077.jpg" alt="PC Cyberpunk 2077">
+    <h2>PC Cyberpunk 2077</h2>
+    <p>Juego de rol de acción en mundo abierto ambientado en Night City, como mercenario ciberpunk.</p>
+    <a href="zona de descarga/cyberpunk 2077.torrent" class="download-btn" target="_blank">Descargar Cyberpunk 2077</a>
+</div>
+
             
 
 
@@ -1247,7 +1307,7 @@ Tarjeta gráfica Nvidia GeForce GTX 780 (3 GB), AMD Radeon R9 290 (4 GB) o equiv
             <!-- Juegos para PS5 -->
 
 
-          <div class="game-card ps5">
+       <div class="game-card pc accion">
                 <img src="imagenes,/batllefield 6 beta.jpg" alt="PS5 Juego 1">
                 <h2>PS5 Battlefield 6 Beta</h2>
                 <p> sabemos que la historia de Battlefield 6 enfrentará a Estados Unidos y sus aliados contra Pax Armata, una corporación militar privada que asciende al poder después de que algunas naciones desertan de la OTAN.
@@ -1301,7 +1361,7 @@ Tarjeta gráfica Nvidia GeForce GTX 780 (3 GB), AMD Radeon R9 290 (4 GB) o equiv
 
             <!-- Juegos para Xbox -->
        
- <div class="game-card xbox">
+<div class="game-card pc accion">
                 <img src="imagenes,/batllefield 6 beta.jpg" alt="Xbox Juego 1">
                 <h2>Xbox Battlefield 6 Beta</h2>
                 <p> sabemos que la historia de Battlefield 6 enfrentará a Estados Unidos y sus aliados contra Pax Armata, una corporación militar privada que asciende al poder después de que algunas naciones desertan de la OTAN.</p>
@@ -1310,7 +1370,7 @@ Tarjeta gráfica Nvidia GeForce GTX 780 (3 GB), AMD Radeon R9 290 (4 GB) o equiv
 
 
 
-            <div class="game-card xbox">
+            <div class="game-card pc accion">
                 <img src="imagenes/img (2).jpg" alt="Xbox Juego 1">
                 <h2>Xbox HALO INFINITE</h2>
                 <p>Halo Infinite es un juego de disparos en primera persona (FPS) desarrollado por 343 Industries y publicado por Xbox Game Studios. Es la sexta entrega principal de la saga y marca el regreso del icónico Jefe Maestro (Master Chief) en una nueva aventura ambientada en el anillo Zeta Halo..</p>
@@ -1542,7 +1602,52 @@ Tarjeta gráfica Nvidia GeForce GTX 780 (3 GB), AMD Radeon R9 290 (4 GB) o equiv
 
 <!-- Contenedor para el video del tráiler -->
 
-<iframe width="560" height="315" src="img/Vídeo de  juegos.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="imagenes,/ps5 pro ‐ Hecho con Clipchamp.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Codigo de botones mostrar genero y plataforma -->
+<script>
+let selectedPlatform = 'all';
+let selectedGenre = 'all';
+
+function setPlatform(platform) {
+    selectedPlatform = platform;
+    filterGames();
+}
+
+function setGenre(genre) {
+    selectedGenre = genre;
+    filterGames();
+}
+
+function filterGames() {
+    const games = document.querySelectorAll('.game-card');
+    games.forEach(game => {
+        const matchPlatform = selectedPlatform === 'all' || game.classList.contains(selectedPlatform);
+        const matchGenre = selectedGenre === 'all' || game.classList.contains(selectedGenre);
+
+        game.style.display = (matchPlatform && matchGenre) ? 'block' : 'none';
+    });
+}
+</script>
+
+
+
+
 
 
 
